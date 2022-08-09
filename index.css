@@ -1,0 +1,270 @@
+/* Body Section */
+.body{
+    min-width: 1080px;
+}
+/* Header */
+.nav{
+    list-style: none;
+    margin: 0;
+    background-color: black;
+    color: white;
+    height: 4em;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.other-btn{
+    height: 100%;
+    overflow: hidden;
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.other-drpdwn{
+    height: 3em;
+    overflow: hidden;
+    background-color: black;
+    color: white;
+    margin: 0.5em 0px;
+    border: 0;
+}
+.other-btn>p{
+    margin: 0;
+    font-weight: 700;
+    font-size:small;
+    text-align: center;
+}
+.img_amzn>img{
+    height: 100%;
+    padding: 0;
+}
+.nav-item{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    margin: 0;
+    width: 100%;
+}
+.nav-item>div{
+    margin:0% 1em;
+    flex-grow: 1;
+}
+.nav-item>div>div, .nav-item>div>button{
+    float: center;
+}
+.search{
+    min-width: 200px;
+    flex-grow: 2;
+    border-style: ridge;
+    border-radius: 7px;
+    margin: 3% 2%;
+}
+.drpdwn{
+    border: 0;
+    border-radius: 0;
+    background-color: #F3F3F3;
+    color: grey;
+}
+.find{
+    background-color: #FEBD69;
+    color: black;
+    width: 20%;
+    border: none;
+    font-size: 18px;
+}
+.cart-div{
+    float: right;
+}
+.cart-div>img{
+    margin: 10px;
+    width: 50px;
+    float: right;
+}
+/* NavBar */
+.Navigation{
+    display: grid;
+    grid-template-columns: repeat(9,1fr);
+    background-color: #232F3E;
+    height: 3em;
+}
+.Navigation>button{
+    margin: 0px 1px;
+    padding: 0;
+    background-color: #232F3E;
+    color: white;
+    border: 0;
+    float: left;
+}
+.download-button{
+    float: right;
+    margin-left: 5%;
+    grid-column-start: 7;
+    grid-column-end: 10;
+}
+
+/* Cards */
+.card-group{
+    position:relative;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    top:-21em;
+}
+
+.card-group>div{
+    margin: 3%;
+    border-style: groove;
+}
+
+.card button{
+    border: 0;
+    color: skyblue;
+    background-color: white;
+    float: left;
+    margin:0;
+    padding: 0;
+}
+
+.card-title{
+    margin: auto;
+    padding: auto;
+    text-align: center;
+}
+
+#cimgs{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+#cimgs img{
+    border: 1%;
+    width: 90%;
+    cursor: pointer;
+}
+#cimgs p{
+    font-size: small;
+    cursor: pointer;
+}
+
+/* Division Images */
+#mulcar{
+    display: flex;
+    flex-direction: row;
+}
+#mul>h5{
+    margin: 1em;
+}
+#mulcar>div{
+    flex-grow: 1;
+    display: inline-block;
+    width: 16%;
+    margin: 1em;
+    border: outset;
+    cursor: pointer;
+}
+#mulcar img{
+    margin: 1em;
+    width: 50%;
+    height: 55%;
+    margin: 1em;
+}
+#mulcar button{
+    color: white;
+    border: none;
+    background-color: rgb(204,12,57);
+}
+
+
+
+/* Footer */
+.footer{
+    background-color: rgb(35,47,62);
+    color: white;
+}
+
+.footerdiv{
+    display: flex;
+    flex-direction: row;
+    margin: 0 20%;
+}
+.footerdiv>div{
+    margin: 2% 3%;
+}
+.footerdiv p{
+    font-size: medium;
+    font-weight: bold;
+}
+#footimg>img{
+    width: 4em;
+    margin: 0 47%;
+}
+.countries{
+    text-align: center;
+    margin: 0;
+}
+.countries>p{
+    margin: 0;
+}
+@media screen and (max-width: 1230px) {
+    .card-group{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+@media screen and (max-width : 1080px){
+    .body{
+        width: fit-content;
+    }
+    .nav-item>div{
+        display: inline;
+        margin: 1px 2px;
+    }
+    .cart-div{
+        float: right;
+    }
+}        
+@media screen and (max-width : 1455px) {
+    .footerdiv{
+        margin: 0 16%;
+    }
+}
+@media screen and (max-width : 1280px) {
+    .footerdiv{
+        margin: 0 12%;
+    }
+}
+@media screen and (max-width : 1140px) {
+    .footerdiv{
+        margin: 0 9%;
+    }
+}
+@media screen and (max-width : 1080px) {
+    .footerdiv{
+        margin: 0;
+    }    
+}
+@media screen and (min-width : 1580px) and (max-width : 2160px){
+    .card-group{
+        top: -21em;
+    }
+}
+@media screen and (min-width : 1210px) and (max-width : 1579px){
+    .card-group{
+        top: -18em;
+    }
+}
+@media screen and (min-width : 320px) and (max-width : 1209px){
+    .card-group{
+        top: -16em;
+    }
+}
+@media screen and (min-width : 900px) and (max-width : 1080px){
+    .card-group{
+        top: -13em;
+    }
+}
+@media screen and (min-width : 320px) and (max-width : 899px){
+    .card-group{
+        top: -11em;
+    }
+}
